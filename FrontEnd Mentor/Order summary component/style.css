@@ -30,13 +30,13 @@ body {
   background-color: #fff;
   border-radius: 2rem;
   margin: 7rem auto 0 auto;
-  width: 34.5rem;
+  max-width: 34.5rem;
 }
 
 .card__content {
   margin: 4.5rem auto 0 auto;
   padding-bottom: 3rem;
-  width: 29.5rem;
+  max-width: 29.5rem;
 }
 
 .card__image {
@@ -84,7 +84,7 @@ body {
 }
 
 .customer-plan__change {
-  color: #3829e0;
+  color: #1f2f56;
   text-decoration: underline;
 }
 
@@ -97,5 +97,14 @@ body {
 
 .attribution {
   margin-top: 1rem;
+}
+
+@media (min-width: 600px) {
+  .card {
+    max-width: 45rem;
+  }
+  .card__content {
+    max-width: 35rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
