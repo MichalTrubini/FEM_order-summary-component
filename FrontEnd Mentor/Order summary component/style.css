@@ -1,1 +1,31 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+html {
+  font-size: 62.5%;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: #e0e8ff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.card {
+  border-radius: 1rem;
+  margin: 7rem auto;
+  width: 34.5rem;
+}
+
+.card__content {
+  width: 29.5rem;
+  margin: auto;
+}
+
+.card__image {
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */

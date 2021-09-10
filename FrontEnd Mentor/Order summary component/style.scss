@@ -1,0 +1,32 @@
+$color-bgd-primary:#e0e8ff;
+
+html {
+    font-size: 62.5%;
+}
+
+img {
+    max-width:100%;
+}
+
+body {
+    background-color:$color-bgd-primary;
+    box-sizing:border-box;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.card {
+    border-radius:1rem;
+    margin:7rem auto;
+    width:34.5rem;
+    
+
+    &__content {
+        width:29.5rem;
+        margin:auto
+    }
+
+    &__image {
+        display:block;
+    }
+}
