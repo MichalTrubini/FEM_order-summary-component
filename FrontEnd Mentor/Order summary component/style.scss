@@ -1,4 +1,8 @@
-$color-bgd-primary:#e0e8ff;
+@import 'resets', 'variables';
+
+@function weight ($weight-name) {
+    @return map-get($font-weights,$weight-name)
+};
 
 html {
     font-size: 62.5%;
@@ -10,23 +14,82 @@ img {
 
 body {
     background-color:$color-bgd-primary;
-    box-sizing:border-box;
+    color: $color-text-quartary;
+    font-family:"Red Hat Display", sans-serif;
     font-size: 1.6rem;
+    font-weight: weight(normal);
     text-align: center;
 }
 
 .card {
-    border-radius:1rem;
-    margin:7rem auto;
+    background-color: $color-bgd-secondary;
+    border-radius:2rem;
+    margin:7rem auto 0 auto;
     width:34.5rem;
     
-
     &__content {
-        width:29.5rem;
-        margin:auto
+        
+        margin: 4.5rem auto 0 auto;
+        padding-bottom: 3rem;
+        width: 29.5rem;
     }
 
     &__image {
+        border-radius: 2rem 2rem 0 0;
         display:block;
     }
+
+    &__summary {
+        color: $color-text-primary;
+        font-size: 2.3rem;
+        font-weight: weight(bold);
+        margin-bottom: 2rem;
+    }
+
+    &__paragraph {
+        line-height:2.5rem;
+        padding: 0 1rem;
+    }
+
+    &__customer-plan {
+        align-items:center;
+        display:flex;
+        justify-content:space-between;
+        margin: 5rem 0;
+        padding: 0 1rem;
+    }
+
+    &__cancellation {
+        margin-top: 3em;
+        
+    }
+}
+
+.customer-plan {
+
+    &__price {
+        line-height: 2.4rem;
+    }
+
+    &__frequency {
+        color: $color-text-primary;
+        font-weight: weight(bold);
+    }
+
+    &__change {
+        color: $color-bgd-tertiary;
+        text-decoration:underline;
+    }
+
+}
+
+.payment__link {
+    background-color: $color-bgd-tertiary;
+    border-radius: 1rem;
+    color: $color-text-secondary;
+    padding: 1rem 2rem;
+}
+
+.attribution {
+    margin-top:1rem;
 }

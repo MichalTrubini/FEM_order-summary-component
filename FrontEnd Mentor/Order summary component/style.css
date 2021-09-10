@@ -1,3 +1,14 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -8,24 +19,83 @@ img {
 
 body {
   background-color: #e0e8ff;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  color: #7280a7;
+  font-family: "Red Hat Display", sans-serif;
   font-size: 1.6rem;
+  font-weight: 500;
   text-align: center;
 }
 
 .card {
-  border-radius: 1rem;
-  margin: 7rem auto;
+  background-color: #fff;
+  border-radius: 2rem;
+  margin: 7rem auto 0 auto;
   width: 34.5rem;
 }
 
 .card__content {
+  margin: 4.5rem auto 0 auto;
+  padding-bottom: 3rem;
   width: 29.5rem;
-  margin: auto;
 }
 
 .card__image {
+  border-radius: 2rem 2rem 0 0;
   display: block;
+}
+
+.card__summary {
+  color: #1f2f56;
+  font-size: 2.3rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+
+.card__paragraph {
+  line-height: 2.5rem;
+  padding: 0 1rem;
+}
+
+.card__customer-plan {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 5rem 0;
+  padding: 0 1rem;
+}
+
+.card__cancellation {
+  margin-top: 3em;
+}
+
+.customer-plan__price {
+  line-height: 2.4rem;
+}
+
+.customer-plan__frequency {
+  color: #1f2f56;
+  font-weight: 900;
+}
+
+.customer-plan__change {
+  color: #3829e0;
+  text-decoration: underline;
+}
+
+.payment__link {
+  background-color: #3829e0;
+  border-radius: 1rem;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+.attribution {
+  margin-top: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
